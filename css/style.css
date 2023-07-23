@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.bg-image {
+    background-image: url('../images/picmain.png');
+    background-size: no-repeat;
+    background-size:cover;
+}
+
+
+	/*background-image:url('/images/picmain.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	background-color: aqua;*/
+/*
+.pic {
+	background-image:url(../images/picmain.png);
+}
+.fon {
+	background-color:aqua;
+}*/
+.block {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 50px 0;
+	background: rgba(233, 233, 233, 0.25);
+	backdrop-filter: blur(5px);
+	position: relative;
+	color: #FFF;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.radio-container {
+	display: flex;
+	width: 340px;
+	margin: 0 auto;
+	height: 36px;
+	background: violet;
+	border-radius: 35px;
+	position: relative;
+	z-index: 5;
+	color:white;
+	margin-bottom: 77px;
+}
+
+input[type="radio"] {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+}
+input[type="radio"] + label {
+	flex: 1 1 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+input[type="radio"] ~ span {
+	position: absolute;
+	z-index: -1;
+	top: 2px;
+	left: 2px;
+	transform: translateX(calc(100% - 4px));
+	bottom: 2px;
+	width: 50%;
+	border-radius: 40px;
+	background: #153416;
+	transition: .3s linear;
+}
+
+input[type="radio"]:checked + label + input + label + span {
+	transform: translateX(0);
+}
+h1 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.mail {
+	width: 340px;
+	height: 44px;
+	border-radius: 30px;
+	background: #929191;
+	margin-bottom: 15px;
+	border: none;
+	padding: 15px auto 15px 20px;
+}
+
+.pass {
+	width: 340px;
+	height: 44px;
+	border-radius: 30px;
+	background: #929191;
+	border: none;
+	padding: 15px auto 15px 20px;
+	margin-bottom: 20px;
+}
+
+.memory {
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	margin-bottom: 30px;
+}
+
+.memory-a {
+	color: #153416;
+	text-align: center;
+	text-decoration-line: underline;
+}
+.memory-checkbox {
+	text-align: center;
+}
+.enter {
+	width: 340px;
+	height: 44px;
+	border-radius: 30px;
+	background: #153416;
+	border: none;
+	margin-bottom: 40px;
+}
+
+.account {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin-bottom: 30px;
+
+}
+
+.no-account {
+	color: #153416;
+	text-decoration: none;
+}
+
+.regis {
+	color: #FFF;
+	text-decoration-line: underline;
+}
+
+.enter-svg {
+	color: #153416;
+	margin-bottom: 20px;
+}
+
+.svg {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	width: 102px;
+	height: 24px;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+	fill: #153416;
+}
