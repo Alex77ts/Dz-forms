@@ -7,25 +7,26 @@
 </head>
 <body class="bg-image">
     <div class="block">
-        <form action="#">
+        <form class="form-container" action="#">
             <div class="radio-container">
                 <input type="radio" name="radio-btn" id="leftbtn" checked>
-                <label for="">Вход</label>
+                <label for="leftbtn">Вход</label>
     
                 <input type="radio" name="radio-btn" id="rightbtn">
-                <label for="">Регистрация</label>
+                <label for="rightbtn">Регистрация</label>
                 <span></span>
             </div>
             <h1>Вход</h1>
             <div>
-                <p><input class="mail" type="text" name="mail" value="Введите e-mail"></p> 
-                <p><input class="pass" type="text" name="pass" value="Пароль"></p> 
+                <p><input class="mail" type="text" name="mail" placeholder="Введите e-mail"></p> 
+                <p><input class="pass" type="text" name="pass" placeholder="Пароль"></p> 
             </div>
             <div class="memory">
-                <p><input class="memory-checkbox" type="checkbox" name="" >Запомнить меня</p>
+                <p><input class="memory-checkbox" type="checkbox">
+                <label for="#">Запомнить меня</label></p>
                 <p><a class="memory-a" href="#">Забыли пароль?</a></p>
             </div>
-            <p><input class="enter" type="text" placeholder="Войти"></p>
+            <p><input class="enter" type="submit" value="Войти"></p>
             <div class="account">
                 <p><a class="no-account" href="#">Еще нет аккаунта?</a></p>
                 <p><a class="regis" href="#">Зарегистрироваться</a></p>
